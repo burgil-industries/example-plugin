@@ -1,0 +1,14 @@
+{
+  "id": "example",
+  "name": "Example",
+  "version": "1.0.0",
+  "description": "Minimal example plugin — reads a file and logs it via the core logger",
+  "main": "index.js",
+  "dependencies": {
+    "core": "*"
+  },
+  "permissions": [
+    "fs.read:${dataDir}",
+    "fs.write:${dataDir}"
+  ]
+}

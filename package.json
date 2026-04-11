@@ -1,0 +1,8 @@
+{
+  "name": "plugin-example",
+  "version": "1.0.0",
+  "description": "Minimal example plugin",
+  "main": "index.js",
+  "type": "commonjs",
+  "private": true
+}
