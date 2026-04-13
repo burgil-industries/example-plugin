@@ -2,13 +2,15 @@
   "id": "example",
   "name": "Example",
   "version": "1.0.0",
-  "description": "Minimal example plugin - reads a file and logs it via the core logger",
+  "description": "Minimal example plugin - reads a file, logs it, and hooks into app events",
   "main": "index.js",
   "dependencies": {
     "core": "*"
   },
   "permissions": [
     "fs.read:${dataDir}",
-    "fs.write:${dataDir}"
+    "fs.write:${dataDir}",
+    "hooks.action:app:launch",
+    "hooks.action:app:file-open"
   ]
 }
